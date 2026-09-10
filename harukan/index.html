@@ -102,7 +102,8 @@
 <p>
   앱의 일부 화면에 배너 광고가 표시됩니다. 광고를 제공하기 위해 구글은
   <strong>광고 식별자(Advertising ID)</strong>, 기기 및 앱 정보, 대략적인 위치(IP 주소 기반),
-  광고 상호작용 기록 등을 처리할 수 있습니다.
+  광고 상호작용 기록(노출·클릭), 앱 성능에 관한 진단 정보 등을 처리할 수 있습니다.
+  이 처리는 구글의 광고 SDK가 수행하며, 개발자는 그 정보를 따로 받거나 보관하지 않습니다.
 </p>
 <ul>
   <li>일기 내용, 사진, 일정은 광고 서비스로 전달되지 않습니다.</li>
@@ -167,7 +168,7 @@
   <li>백업 암호를 잊으면 그 파일은 열 수 없습니다.</li>
 </ul>
 
-<h2>7. 보관 기간과 삭제</h2>
+<h2 id="delete">7. 보관 기간과 삭제</h2>
 <ul>
   <li>개발자가 보관하는 이용자 정보가 없으므로, 개발자 측의 보관 기간도 없습니다.</li>
   <li>기기 안의 기록은 이용자가 지울 때까지 유지됩니다.</li>
@@ -257,7 +258,9 @@
 <p>
   Banner ads appear on some screens. To serve them, Google may process your
   <strong>Advertising ID</strong>, device and app information, approximate location (from IP
-  address), and ad interaction data.
+  address), ad interaction data (impressions and clicks), and diagnostic information about app
+  performance. This processing is carried out by Google's advertising SDK; the developer neither
+  receives nor stores that information.
 </p>
 <ul>
   <li>Your entries, photos, and plans are never sent to the ad service.</li>
@@ -323,7 +326,7 @@
   <li>If you forget the backup password, the file cannot be opened.</li>
 </ul>
 
-<h2>7. Retention and deletion</h2>
+<h2 id="delete-en">7. Retention and deletion</h2>
 <ul>
   <li>The developer holds no user information, so there is no developer-side retention period.</li>
   <li>Records on your device remain until you delete them.</li>
