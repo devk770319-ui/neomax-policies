@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>i케어 개인정보 처리방침</title>
+<meta name="description" content="i케어 앱이 어떤 정보를 어디에 저장하고, 무엇을 서버로 보내며, 어떻게 지우는지에 대한 안내">
+<style>
+  :root {
+    --bg: #ffffff;
+    --fg: #1f2429;
+    --muted: #5b6570;
+    --line: #dfe3e8;
+    --accent: #2f6f8f;
+    --note-bg: #f3f6f8;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #14181c;
+      --fg: #e6e9ec;
+      --muted: #9aa4ad;
+      --line: #2c343c;
+      --accent: #7fb3d0;
+      --note-bg: #1c2228;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #14181c;
+    --fg: #e6e9ec;
+    --muted: #9aa4ad;
+    --line: #2c343c;
+    --accent: #7fb3d0;
+    --note-bg: #1c2228;
+  }
+  html { background: var(--bg); }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--fg);
+    font-family: "Noto Sans KR", "Apple SD Gothic Neo", "Malgun Gothic", system-ui, sans-serif;
+    font-size: 17px;
+    line-height: 1.7;
+    word-break: keep-all;
+  }
+  main { max-width: 720px; margin: 0 auto; padding: 32px 16px 64px; }
+  h1 { font-size: 1.6rem; margin: 0 0 4px; }
+  h2 { font-size: 1.2rem; margin: 40px 0 12px; padding-top: 16px; border-top: 1px solid var(--line); }
+  h3 { font-size: 1.02rem; margin: 24px 0 8px; }
+  p { margin: 0 0 12px; }
+  .meta { color: var(--muted); font-size: 0.92rem; margin-bottom: 24px; }
+  table { border-collapse: collapse; width: 100%; margin: 12px 0 20px; font-size: 0.95rem; }
+  th, td { border: 1px solid var(--line); padding: 8px 10px; text-align: left; vertical-align: top; }
+  th { background: var(--note-bg); font-weight: 600; }
+  ul { padding-left: 20px; margin: 0 0 12px; }
+  li { margin-bottom: 4px; }
+  .note { background: var(--note-bg); border-left: 4px solid var(--accent); padding: 12px 16px; margin: 16px 0; }
+  a { color: var(--accent); }
+  @media (max-width: 480px) { table, thead, tbody, tr, th, td { display: block; } thead { display: none; } td { border-top: none; } td::before { content: attr(data-label); display: block; font-weight: 600; color: var(--muted); font-size: 0.85rem; } tr { border-top: 1px solid var(--line); margin-bottom: 12px; } }
+</style>
+</head>
+<body>
+<main>
+
+<h1>i케어 개인정보 처리방침</h1>
+<p class="meta">시행일: 2026년 9월 19일 · 버전 1.0 · 앱 패키지 <code>com.neomax.icare</code></p>
+
+<p>i케어(이하 "앱")는 발달이 느린 아이를 키우는 보호자가 치료 일정, 치료 기록, 영수증과 서류를 정리하고 보험 청구 서류를 묶는 데 쓰는 안드로이드 앱입니다. 에이치제이솔루션(이하 "운영자")는 개인정보보호법 제30조에 따라 앱이 어떤 정보를 어디에 저장하고, 무엇을 서버로 보내며, 어떻게 지우는지를 아래와 같이 알립니다.</p>
+
+<div class="note">
+<p><strong>가장 중요한 것 세 가지</strong></p>
+<ul>
+<li>아이의 진단명, 치료 기록, 서류 사진은 <strong>기본적으로 사용자의 기기에만</strong> 저장됩니다. 서버로 가지 않습니다.</li>
+<li>사용자가 <strong>가족 공유를 직접 켠 경우에만</strong> 일부 정보가 서버에 저장되며, 그때도 진단명과 서류 파일은 운영자가 읽을 수 없도록 기기에서 암호화된 뒤 올라갑니다.</li>
+<li>앱은 광고를 싣지 않고, 광고 식별자와 위치 정보를 수집하지 않으며, 수집한 정보를 광고나 분석 목적으로 제3자에게 제공하지 않습니다.</li>
+</ul>
+</div>
+
+<h2>1. 앱을 쓰는 두 가지 방식</h2>
+<p>앱은 로그인 없이 쓸 수 있습니다. 어떤 방식을 쓰느냐에 따라 정보가 머무는 곳이 다릅니다.</p>
+<table>
+<thead><tr><th>방식</th><th>로그인</th><th>정보가 있는 곳</th></tr></thead>
+<tbody>
+<tr><td data-label="방식"><strong>로컬 전용</strong> (기본)</td><td data-label="로그인">없음</td><td data-label="정보가 있는 곳">사용자의 기기에만. 운영자 서버에는 아무것도 저장되지 않습니다.</td></tr>
+<tr><td data-label="방식"><strong>계정 모드</strong></td><td data-label="로그인">Google 계정</td><td data-label="정보가 있는 곳">기기 + 운영자 서버. 가족 공유와 자동 채움(AI)을 쓰려면 이 방식이 필요합니다.</td></tr>
+</tbody>
+</table>
+
+<h2>2. 수집하는 정보와 목적</h2>
+
+<h3>2.1 사용자가 직접 입력하는 정보</h3>
+<table>
+<thead><tr><th>항목</th><th>목적</th><th>로컬 전용</th><th>계정 모드</th></tr></thead>
+<tbody>
+<tr><td data-label="항목">아이의 표시 이름, 출생 연월</td><td data-label="목적">여러 아이의 기록을 구분</td><td data-label="로컬 전용">기기</td><td data-label="계정 모드">기기 + 서버(가족 공유 시)</td></tr>
+<tr><td data-label="항목"><strong>아이의 진단명</strong> (민감정보)</td><td data-label="목적">요약 리포트와 서류 정리에 참고. <strong>별도 동의 후에만 입력</strong>되며, 입력하지 않아도 앱의 모든 기능을 쓸 수 있습니다</td><td data-label="로컬 전용">기기 (암호화)</td><td data-label="계정 모드">기기 + 서버(가족 공유 시, <strong>기기에서 암호화된 상태로만</strong>)</td></tr>
+<tr><td data-label="항목">치료 센터·담당자 이름, 연락처, 주소</td><td data-label="목적">일정 관리와 서류 연결</td><td data-label="로컬 전용">기기</td><td data-label="계정 모드">기기 + 서버(가족 공유 시)</td></tr>
+<tr><td data-label="항목">치료 일정, 회차 기록, 홈 과제, 메모</td><td data-label="목적">일정 알림, 기록 관리, 청구 서류 준비</td><td data-label="로컬 전용">기기</td><td data-label="계정 모드">기기 + 서버(가족 공유 시)</td></tr>
+<tr><td data-label="항목">서류 사진 (영수증·진단서·처방전 등)</td><td data-label="목적">서류 보관, 금액·날짜 자동 채움, 청구 패키지 생성</td><td data-label="로컬 전용">기기 (암호화)</td><td data-label="계정 모드">기기 + 서버(가족 공유 시, <strong>기기에서 암호화된 파일로만</strong>)</td></tr>
+<tr><td data-label="항목">서류에서 읽어 낸 글자(OCR 텍스트)</td><td data-label="목적">금액·날짜·서류 종류 자동 채움</td><td data-label="로컬 전용">기기</td><td data-label="계정 모드">기기. <strong>서버에 저장하지 않습니다</strong></td></tr>
+<tr><td data-label="항목">금액, 바우처 충당분, 청구 상태</td><td data-label="목적">청구 가능 금액 계산, 청구 패키지 생성</td><td data-label="로컬 전용">기기</td><td data-label="계정 모드">기기 + 서버(가족 공유 시)</td></tr>
+</tbody>
+</table>
+
+<h3>2.2 계정 모드에서 자동으로 생기는 정보</h3>
+<table>
+<thead><tr><th>항목</th><th>목적</th><th>비고</th></tr></thead>
+<tbody>
+<tr><td data-label="항목">Google 계정 이메일, 계정 식별자</td><td data-label="목적">로그인, 가족 구성원 구분</td><td data-label="비고">Google 로그인 시 Google 이 전달합니다. 비밀번호는 앱과 운영자에게 전달되지 않습니다</td></tr>
+<tr><td data-label="항목">가족 공유 구성원의 표시 이름과 역할</td><td data-label="목적">누가 무엇을 볼 수 있는지 관리</td><td data-label="비고">초대 코드로 가족을 만들 때 생깁니다</td></tr>
+<tr><td data-label="항목">자동 채움(AI) 사용 횟수</td><td data-label="목적">무료 사용량(월 5건) 관리</td><td data-label="비고">건수만 셉니다. 내용은 남지 않습니다</td></tr>
+<tr><td data-label="항목">자동 채움 요청의 기술 기록 — 요청 번호, 걸린 시간, 처리한 글자 수, 성공 여부</td><td data-label="목적">서비스 안정성 유지, 비용 관리</td><td data-label="비고"><strong>요청 본문과 응답 본문은 저장하지 않습니다</strong></td></tr>
+</tbody>
+</table>
+
+<h3>2.3 수집하지 않는 것</h3>
+<ul>
+<li>위치 정보, 연락처, 통화 기록, 문자</li>
+<li>광고 식별자(ADID), 기기 고유 번호</li>
+<li>앱 사용 행태 분석 데이터, 오류 자동 보고(크래시 리포트)</li>
+<li>보호자 본인의 이름·생년월일 (앱은 보호자의 신상 정보를 입력받지 않습니다)</li>
+<li>사진 보관함 전체 — 앱은 사용자가 고른 사진 한 장만 받으며, 보관함 접근 권한을 요구하지 않습니다</li>
+</ul>
+
+<h2>3. 기기에 저장되는 방식</h2>
+<ul>
+<li>기록은 기기 안의 암호화된 데이터베이스에, 서류 사진은 암호화된 파일로 저장됩니다. 암호화 키는 기기의 보안 저장소(Android Keystore)에 있어 기기를 떠나지 않습니다.</li>
+<li>안드로이드의 자동 클라우드 백업과 기기 간 자동 이전에서 앱 데이터를 <strong>제외</strong>합니다. 다른 기기로 옮기려면 사용자가 설정에서 직접 비밀번호를 걸어 백업 파일을 만들어야 합니다.</li>
+<li>앱을 삭제하면 기기의 모든 앱 데이터가 함께 삭제됩니다.</li>
+</ul>
+
+<h2>4. 서버로 보내는 정보 — 가족 공유를 켠 경우에만</h2>
+<p>가족 공유는 사용자가 설정에서 직접 켜야 하며, 켤 때 별도 동의 화면을 거칩니다. 켜지 않으면 아래 내용은 해당하지 않습니다.</p>
+<ul>
+<li>서버로 가는 것: 아이 정보, 센터·담당자, 일정, 회차 기록, 서류의 종류·날짜·금액·상태, 서류 파일.</li>
+<li><strong>운영자가 읽을 수 없는 것</strong>: 진단명과 서류 파일은 가족 구성원만 가진 키로 기기에서 암호화된 뒤 올라갑니다. 운영자의 서버에는 암호화된 형태로만 있습니다.</li>
+<li><strong>서버로 가지 않는 것</strong>: 서류에서 읽어 낸 글자(OCR 텍스트), 아이의 얼굴이나 생활 사진.</li>
+<li>서버에서는 같은 가족의 구성원만 해당 가족의 데이터에 접근할 수 있도록 행 단위 접근 제어를 적용합니다.</li>
+</ul>
+
+<h2>5. 자동 채움(AI) 처리</h2>
+<p>서류 사진을 찍거나 다른 앱에서 글을 공유하면, 앱이 금액·날짜·서류 종류를 미리 채워 줍니다. 이때 다음 원칙을 지킵니다.</p>
+<ul>
+<li>사진은 <strong>기기 안에서</strong> 글자로 바뀝니다(온디바이스 문자 인식). 사진 자체는 서버로 가지 않습니다.</li>
+<li>서버로 보내기 전에 아이 이름은 <code>[아이]</code>, 보호자 이름은 <code>[보호자]</code>로 바꾸고, 주민등록번호·전화번호·카드번호·이메일·계좌번호 형태의 문자열을 가립니다.</li>
+<li>가려진 글자만 인공지능 언어 모델에 전달되어 구조화된 값(금액, 날짜, 종류)으로 돌아옵니다.</li>
+<li>운영자 서버는 <strong>요청 본문과 응답 본문을 저장하지 않습니다.</strong> 요청 번호, 걸린 시간, 글자 수, 성공 여부만 남깁니다.</li>
+<li>채워진 값은 저장 전에 사용자가 확인하고 고칩니다. 자동 채움이 실패해도 직접 입력으로 저장할 수 있습니다.</li>
+<li>앱은 의료 조언이나 발달 판단을 하지 않으며, 인공지능에게도 그런 답을 요구하지 않습니다.</li>
+</ul>
+
+<h2>6. 처리 위탁과 국외 이전</h2>
+<p>운영자는 아래 사업자에게 처리를 맡깁니다. 이들은 운영자가 정한 목적 밖으로 정보를 쓰지 못합니다.</p>
+<table>
+<thead><tr><th>수탁자</th><th>맡기는 일</th><th>전달되는 정보</th><th>이전 국가</th></tr></thead>
+<tbody>
+<tr><td data-label="수탁자">Supabase, Inc.</td><td data-label="맡기는 일">계정 모드의 데이터베이스·파일 저장·인증 서버 운영</td><td data-label="전달되는 정보">4항의 정보 (진단명·서류 파일은 암호화된 상태)</td><td data-label="이전 국가">싱가포르 (AWS ap-southeast-1)</td></tr>
+<tr><td data-label="수탁자">Google LLC</td><td data-label="맡기는 일">Google 계정 로그인</td><td data-label="전달되는 정보">Google 계정 식별 정보</td><td data-label="이전 국가">미국</td></tr>
+<tr><td data-label="수탁자">Anthropic, PBC</td><td data-label="맡기는 일">자동 채움을 위한 언어 모델 처리</td><td data-label="전달되는 정보">5항에 따라 이름·번호를 가린 서류 글자, 요약 리포트를 위한 사실 목록. 아이 이름과 사진은 가지 않습니다</td><td data-label="이전 국가">미국</td></tr>
+</tbody>
+</table>
+<p>이전 시점은 계정 모드에서 해당 기능을 쓰는 때이며, 방법은 암호화된 네트워크(HTTPS) 전송입니다. 사용자는 계정 모드를 쓰지 않거나 해당 기능을 쓰지 않는 방법으로 국외 이전을 거부할 수 있습니다. 로컬 전용 모드에서는 어떤 정보도 국외로 이전되지 않습니다.</p>
+
+<h2>7. 보관 기간과 삭제</h2>
+<table>
+<thead><tr><th>구분</th><th>보관</th><th>삭제 방법</th></tr></thead>
+<tbody>
+<tr><td data-label="구분">기기의 모든 기록</td><td data-label="보관">사용자가 지울 때까지</td><td data-label="삭제 방법">설정 → 전체 삭제 (즉시, 유예 없음). 앱 삭제로도 지워집니다</td></tr>
+<tr><td data-label="구분">서버의 가족 공유 데이터</td><td data-label="보관">계정을 삭제할 때까지</td><td data-label="삭제 방법">계정 삭제 요청 후 <strong>30일 이내</strong> 삭제. 가족의 마지막 구성원이 나가면 가족 데이터도 함께 삭제</td></tr>
+<tr><td data-label="구분">자동 채움 기술 기록 (요청 번호·시간·글자 수·성공 여부)</td><td data-label="보관">생성일로부터 90일</td><td data-label="삭제 방법">기간 경과 시 자동 삭제</td></tr>
+<tr><td data-label="구분">Google 계정 연동 정보</td><td data-label="보관">계정을 삭제할 때까지</td><td data-label="삭제 방법">계정 삭제와 함께</td></tr>
+</tbody>
+</table>
+<p>계정 삭제는 앱의 설정 화면에서 요청할 수 있으며, 앱 밖에서는 <a href="mailto:neomax.support@gmail.com?subject=%5Bi%EC%BC%80%EC%96%B4%5D%20%EA%B3%84%EC%A0%95%20%EC%82%AD%EC%A0%9C%20%EC%9A%94%EC%B2%AD">neomax.support@gmail.com</a> (제목에 "계정 삭제 요청"을 적어 보내 주세요)로 요청할 수 있습니다. 법령이 보관을 요구하는 정보가 있으면 그 기간 동안만 분리 보관한 뒤 삭제합니다.</p>
+
+<h2>8. 사용자의 권리</h2>
+<ul>
+<li><strong>열람·정정</strong>: 모든 기록은 앱 안에서 직접 보고 고칠 수 있습니다.</li>
+<li><strong>내보내기</strong>: 설정 → 내보내기로 전체 기록(CSV)과 서류(ZIP)를 받을 수 있습니다. 무료·유료와 관계없이 항상 제공됩니다.</li>
+<li><strong>삭제</strong>: 설정 → 전체 삭제. 계정 모드에서는 계정 삭제.</li>
+<li><strong>동의 철회</strong>: 진단명 동의는 진단명을 지우는 것으로, 가족 공유 동의는 공유를 끄는 것으로 철회됩니다. 철회해도 나머지 기능은 그대로 쓸 수 있습니다.</li>
+</ul>
+<p>권리 행사는 앱 안에서 직접 하거나 10항의 연락처로 요청할 수 있습니다. 요청은 10일 이내에 처리합니다.</p>
+
+<h2>9. 아동의 개인정보</h2>
+<ul>
+<li>이 앱은 <strong>보호자(성인)가 쓰는 앱</strong>이며, 아동을 사용자로 두지 않습니다.</li>
+<li>만 14세 미만 아동의 정보는 <strong>법정대리인인 보호자</strong>가 입력하는 것으로만 들어옵니다. 진단명을 입력할 때 법정대리인임을 확인하는 동의를 따로 받습니다.</li>
+<li>아동의 정보는 오직 그 아동의 기록을 정리하는 목적으로만 쓰이며, 어떤 형태의 평가·프로파일링·광고에도 쓰이지 않습니다.</li>
+</ul>
+
+<h2>10. 개인정보 보호책임자와 문의</h2>
+<table>
+<tbody>
+<tr><th>운영자</th><td>에이치제이솔루션</td></tr>
+<tr><th>개인정보 보호책임자</th><td>곽종 (부장)</td></tr>
+<tr><th>이메일</th><td><a href="mailto:neomax.support@gmail.com">neomax.support@gmail.com</a></td></tr>
+<tr><th>계정 삭제 요청</th><td><a href="mailto:neomax.support@gmail.com?subject=%5Bi%EC%BC%80%EC%96%B4%5D%20%EA%B3%84%EC%A0%95%20%EC%82%AD%EC%A0%9C%20%EC%9A%94%EC%B2%AD">neomax.support@gmail.com</a> — 제목 "계정 삭제 요청". 접수 후 30일 이내 삭제하고 완료를 회신합니다</td></tr>
+</tbody>
+</table>
+<p>개인정보 침해에 대한 신고나 상담은 개인정보침해신고센터(privacy.kisa.or.kr, 국번 없이 118), 개인정보분쟁조정위원회(kopico.go.kr, 1833-6972)에도 할 수 있습니다.</p>
+
+<h2>11. 안전 조치</h2>
+<ul>
+<li>기기: 데이터베이스와 파일 암호화, Android Keystore 키 관리, 자동 백업 제외, 문서 화면 스크린샷 제한.</li>
+<li>서버: HTTPS 전송, 가족 단위 행 접근 제어, 진단명·서류 파일의 기기 측 암호화, 인공지능 요청·응답 본문 미저장.</li>
+<li>운영: 서버 관리 키를 앱에 넣지 않으며, 로그와 오류 기록에 개인정보나 서류 내용을 남기지 않도록 빌드 단계에서 검사합니다.</li>
+</ul>
+
+<h2>12. 방침의 변경</h2>
+<p>이 방침이 바뀌면 시행 7일 전에 앱 안 공지와 이 페이지로 알립니다. 수집 항목이나 제3자 제공이 늘어나는 변경은 앱에서 다시 동의를 받습니다.</p>
+
+<h2>변경 이력</h2>
+<table>
+<thead><tr><th>버전</th><th>날짜</th><th>내용</th></tr></thead>
+<tbody>
+<tr><td data-label="버전">1.0</td><td data-label="날짜">2026-09-19</td><td data-label="내용">최초 제정</td></tr>
+</tbody>
+</table>
+
+</main>
+</body>
+</html>
