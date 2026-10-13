@@ -44,7 +44,7 @@
 
 <h1 id="ko">하루칸 개인정보처리방침</h1>
 <p class="muted">
-  최종 수정일: 2026년 9월 10일 · 시행일: 2026년 9월 10일<br>
+  최종 수정일: 2026년 10월 13일 · 시행일: 2026년 10월 13일 (익명 사용 통계 추가 · 이전: 2026년 9월 23일)<br>
   앱 이름: 하루칸 · 패키지명: <code>app.harukan.diary</code> · 개발자: NeoMax
 </p>
 
@@ -53,13 +53,14 @@
   하루칸은 <strong>이용자의 일기·사진·일정을 수집하지 않습니다.</strong> 모든 기록은 이용자의
   기기 안에만 저장되며, 개발자는 그 내용을 볼 수 없습니다. 하루칸에는 회원가입도, 로그인도,
   개발자가 운영하는 서버도 없습니다. 다만 앱에 표시되는 광고와 결제는 구글이 제공하며,
-  그 과정에서 구글이 광고 식별자 등을 처리합니다.
+  그 과정에서 구글이 광고 식별자 등을 처리합니다. 또한 앱을 고치기 위해 일기 내용과 무관한
+  <strong>익명 사용 통계</strong>(어떤 화면을 열었는지 등)를 분석 서비스 GameAnalytics 로 보냅니다(3-3항).
 </div>
 
 <h2>1. 개발자가 수집하는 개인정보</h2>
-<p><strong>없습니다.</strong></p>
+<p><strong>이용자를 알아볼 수 있는 개인정보는 없습니다.</strong> (익명 사용 통계만 3-3항처럼 보냅니다.)</p>
 <p>
-  하루칸은 이용자의 개인정보를 수집·저장·전송하지 않습니다. 개발자는 이용자가 작성한 일기,
+  하루칸은 이름 · 연락처 · 광고 ID 처럼 이용자를 알아볼 수 있는 정보를 수집하지 않습니다. 개발자는 이용자가 작성한 일기,
   첨부한 사진, 등록한 일정, 설정값을 어떤 형태로도 전달받지 않으며 열람할 수 없습니다.
   하루칸은 개발자가 운영하는 서버를 두고 있지 않고, 앱은 이용자의 기록을 외부로 보내지 않습니다.
 </p>
@@ -94,7 +95,7 @@
 
 <h2>3. 제3자 서비스</h2>
 <p>
-  하루칸은 아래 구글 서비스를 이용합니다. 이 서비스들은 각자의 방침에 따라 정보를 처리하며,
+  하루칸은 아래 구글 서비스와 분석 서비스(GameAnalytics)를 이용합니다. 이 서비스들은 각자의 방침에 따라 정보를 처리하며,
   개발자는 그 정보를 이용자의 일기 내용과 연결하지 않고, 연결할 수단도 갖고 있지 않습니다.
 </p>
 
@@ -111,6 +112,8 @@
   <li>이용자는 기기 설정에서 광고 개인 최적화를 끄거나 광고 ID를 삭제할 수 있습니다.
       (안드로이드: 설정 &rsaquo; 개인정보 보호 &rsaquo; 광고)</li>
   <li>앱 내에서 <strong>하루칸 플러스</strong>를 구매하면 배너 광고가 더 이상 표시되지 않습니다.</li>
+  <li>앱을 처음 연 날부터 <strong>30일 동안은 체험 기간</strong>이라 배너 광고가 표시되지 않습니다.
+      이 기간에도 결제는 일어나지 않으며, 결제 수단을 등록받지 않습니다.</li>
 </ul>
 <p>
   구글의 처리 내용은
@@ -127,19 +130,37 @@
   저장하지도 않습니다.</strong> 앱은 구매 여부만 기기 안에 표시해 둡니다.
 </p>
 
-<h3>3-3. 분석 도구 없음</h3>
+<h3>3-3. 익명 사용 통계 — GameAnalytics</h3>
 <p>
-  하루칸에는 사용 통계 분석 도구, 오류 수집 도구, 광고 외의 추적 도구가 포함되어 있지 않습니다.
+  앱을 더 좋게 만들기 위해, 정식(출시) 버전에서는 아래의 <strong>익명 사용 통계</strong>를 분석 서비스
+  <a href="https://gameanalytics.com/privacy">GameAnalytics</a>(GameAnalytics ApS, 덴마크)로 보냅니다.
+</p>
+<ul>
+  <li><strong>보내는 것</strong>: 앱을 처음 실행할 때 기기 안에서 무작위로 만든 설치 번호(이름 · 전화번호 · 광고 ID 와
+      연결되지 않습니다), 기기 모델 · 운영체제 버전 · 앱 버전 · 언어, 앱을 켜고 쓴 시간, 열어 본 화면 이름,
+      일기를 새로 쓰거나 고쳤다는 사실, 첨부한 사진 · 스티커의 <em>개수</em>, 일정을 추가했다는 사실, 무료 체험 며칠째인지,
+      하루칸 플러스 안내를 보거나 구매 버튼을 눌렀는지, 배너 광고가 표시됐는지 · 눌렸는지 · 불러오지 못했는지</li>
+  <li><strong>절대 보내지 않는 것</strong>: 일기 · 사진 · 스티커 · 일정의 <strong>내용</strong>과 글자 수, 기분 기록, 잠금 암호,
+      이름 · 이메일 · 전화번호 · 위치 · 광고 ID · 결제 수단 정보</li>
+  <li><strong>쓰는 곳</strong>: 어느 화면이 많이 쓰이는지, 언제 그만 쓰게 되는지 같은 서비스 개선 통계.
+      맞춤 광고나 판매에는 쓰지 않습니다.</li>
+</ul>
+<p>
+  하루칸에는 이 밖에 오류 수집 도구나 광고 외의 추적 도구가 없습니다.
 </p>
 
 <h2>4. 앱이 요구하는 권한</h2>
 <table>
   <tr><th>권한</th><th>쓰이는 이유</th></tr>
-  <tr><td>인터넷 · 네트워크 상태</td><td>배너 광고를 불러오고 구매 상태를 확인합니다. 일기 내용은 전송하지 않습니다.</td></tr>
+  <tr><td>인터넷 · 네트워크 상태</td><td>배너 광고를 불러오고, 구매 상태를 확인하고, 익명 사용 통계(3-3항)를 보냅니다. 일기 내용은 전송하지 않습니다.</td></tr>
   <tr><td>알림 (POST_NOTIFICATIONS)</td><td>이용자가 켠 경우에만 일기 알림·일정 알림을 보냅니다.</td></tr>
   <tr><td>알람 및 리마인더 (SCHEDULE_EXACT_ALARM)</td><td>이용자가 지정한 시각에 알림을 보내기 위해 사용합니다.</td></tr>
   <tr><td>기기 부팅 완료 수신</td><td>기기를 다시 켠 뒤에도 예약된 알림이 유지되도록 합니다.</td></tr>
   <tr><td>생체 인증 (지문)</td><td>앱 잠금 해제에 사용합니다. 지문 정보는 기기 안의 보안 영역에서만 처리되며 앱이나 개발자에게 전달되지 않습니다.</td></tr>
+  <tr><td>광고 ID (AD_ID)</td><td>구글이 배너 광고를 제공하고 중복 노출을 줄이는 데 씁니다. 3-1 참고.</td></tr>
+  <tr><td>광고 서비스 &mdash; 광고 ID · 어트리뷰션 · 토픽<br>(ACCESS_ADSERVICES_AD_ID · _ATTRIBUTION · _TOPICS)</td><td>안드로이드의 광고 기능(프라이버시 샌드박스)입니다. <strong>토픽</strong>은 기기가 추정한 관심사 범주를 광고에 쓰는 기능입니다. 이 권한들은 구글 광고 SDK가 자동으로 포함하며, 개발자는 그 결과를 받거나 보관하지 않습니다.</td></tr>
+  <tr><td>결제 (com.android.vending.BILLING)</td><td>하루칸 플러스 구매에 씁니다. 3-2 참고.</td></tr>
+  <tr><td>포그라운드 서비스 · 절전 해제<br>(FOREGROUND_SERVICE · WAKE_LOCK)</td><td>예약된 알림을 정해진 시각에 보내기 위해 안드로이드가 요구합니다.</td></tr>
 </table>
 <p>
   위치 권한, 카메라 권한, 주소록 권한, 마이크 권한은 요구하지 않습니다.
@@ -170,7 +191,8 @@
 
 <h2 id="delete">7. 보관 기간과 삭제</h2>
 <ul>
-  <li>개발자가 보관하는 이용자 정보가 없으므로, 개발자 측의 보관 기간도 없습니다.</li>
+  <li>개발자가 직접 보관하는 이용자 정보는 없습니다. 3-3항의 익명 사용 통계는 GameAnalytics 에 보관되며
+      GameAnalytics 의 보관 정책을 따릅니다. 앱을 삭제하면 설치 번호도 지워져, 다시 설치하면 이전 통계와 연결되지 않습니다.</li>
   <li>기기 안의 기록은 이용자가 지울 때까지 유지됩니다.</li>
   <li>지운 일기는 휴지통에 30일간 보관된 뒤 자동으로 완전히 삭제됩니다.</li>
   <li>설정 &rsaquo; 내 데이터 &rsaquo; <strong>모든 데이터 지우기</strong>로 기기 안의 모든 기록과
@@ -178,8 +200,8 @@
   <li>앱을 삭제하면 앱이 저장한 모든 정보가 함께 삭제됩니다.</li>
 </ul>
 <p>
-  개발자가 가진 정보가 없으므로 별도의 열람·정정·삭제 요청 절차는 두고 있지 않습니다.
-  모든 권한은 앱 안에서 이용자가 직접 행사할 수 있습니다.
+  기기 안의 기록에 대한 모든 권한은 앱 안에서 이용자가 직접 행사할 수 있습니다. 익명 사용 통계는 이름 · 연락처와
+  연결되지 않아 개인을 특정할 수 없습니다. 이미 보낸 통계의 삭제를 원하시면 10항의 문의처로 알려 주세요.
 </p>
 
 <h2>8. 아동의 개인정보</h2>
@@ -204,7 +226,7 @@
 
 <h1 id="en">Harukan Privacy Policy</h1>
 <p class="muted">
-  Last updated: September 10, 2026 · Effective: September 10, 2026<br>
+  Last updated: October 13, 2026 · Effective: October 13, 2026 (anonymous usage statistics added · previous: September 23, 2026)<br>
   App: Harukan · Package: <code>app.harukan.diary</code> · Developer: NeoMax
 </p>
 
@@ -213,13 +235,15 @@
   Harukan does <strong>not collect your diary entries, photos, or plans.</strong> Everything you
   write stays on your device, and the developer cannot see it. There is no account, no sign-in,
   and no developer-operated server. Ads and purchases in the app are provided by Google, which
-  processes an advertising identifier and related information for those purposes.
+  processes an advertising identifier and related information for those purposes. To improve the app,
+  Harukan also sends <strong>anonymous usage statistics</strong> unrelated to your entries (such as which
+  screens were opened) to the analytics service GameAnalytics (section 3-3).
 </div>
 
 <h2>1. Information the developer collects</h2>
-<p><strong>None.</strong></p>
+<p><strong>No personal information that identifies you.</strong> (Only the anonymous usage statistics in section 3-3 are sent.)</p>
 <p>
-  Harukan does not collect, store, or transmit your personal information. The developer never
+  Harukan does not collect information that identifies you, such as your name, contacts, or advertising ID. The developer never
   receives and cannot read your diary entries, attached photos, plans, or settings. There is no
   developer-operated server, and the app does not send your records anywhere.
 </p>
@@ -250,7 +274,7 @@
 
 <h2>3. Third-party services</h2>
 <p>
-  Harukan uses the Google services below. They process information under their own policies. The
+  Harukan uses the Google services and the analytics service (GameAnalytics) below. They process information under their own policies. The
   developer does not link that information to your diary content and has no means to do so.
 </p>
 
@@ -268,6 +292,8 @@
   <li>You can opt out of ad personalization or reset your Advertising ID in your device settings
       (Android: Settings &rsaquo; Privacy &rsaquo; Ads).</li>
   <li>Purchasing <strong>Harukan Plus</strong> in the app removes banner ads entirely.</li>
+  <li>For the <strong>first 30 days</strong> after you open the app, no banner ads are shown.
+      Nothing is charged during or after this trial, and no payment method is collected.</li>
 </ul>
 <p>
   See
@@ -283,20 +309,40 @@
   information.</strong> The app only records on your device whether the purchase was made.
 </p>
 
-<h3>3-3. No analytics</h3>
+<h3>3-3. Anonymous usage statistics — GameAnalytics</h3>
 <p>
-  Harukan contains no usage analytics, no crash reporting, and no tracking tools other than the
-  advertising described above.
+  To improve the app, release builds send the following <strong>anonymous usage statistics</strong> to the
+  analytics service <a href="https://gameanalytics.com/privacy">GameAnalytics</a> (GameAnalytics ApS, Denmark).
+</p>
+<ul>
+  <li><strong>What is sent</strong>: a random install ID created on your device the first time the app runs
+      (not linked to your name, phone number, or advertising ID); device model, OS version, app version and
+      language; app start and usage time; names of screens opened; the fact that an entry was created or
+      edited; the <em>number</em> of photos and stickers attached; the fact that a plan was added; the day of
+      the free trial; whether the Harukan Plus screen was viewed or its purchase button tapped; whether a
+      banner ad was shown, tapped, or failed to load</li>
+  <li><strong>Never sent</strong>: the <strong>contents</strong> of your entries, photos, stickers, or plans,
+      their character count, mood records, lock passcode, name, email, phone number, location, advertising
+      ID, or payment details</li>
+  <li><strong>Purpose</strong>: service-improvement statistics, such as which screens are used and when
+      people stop using the app. They are not used for personalized ads and are not sold.</li>
+</ul>
+<p>
+  Harukan contains no crash reporting and no tracking tools other than the advertising and statistics described above.
 </p>
 
 <h2>4. Permissions</h2>
 <table>
   <tr><th>Permission</th><th>Why</th></tr>
-  <tr><td>Internet · Network state</td><td>To load banner ads and check purchase status. Your entries are never transmitted.</td></tr>
+  <tr><td>Internet · Network state</td><td>To load banner ads, check purchase status, and send anonymous usage statistics (section 3-3). Your entries are never transmitted.</td></tr>
   <tr><td>Notifications</td><td>To send diary and plan reminders, only if you turn them on.</td></tr>
   <tr><td>Alarms &amp; reminders (SCHEDULE_EXACT_ALARM)</td><td>To deliver reminders at the time you chose.</td></tr>
   <tr><td>Receive boot completed</td><td>So scheduled reminders survive a device restart.</td></tr>
   <tr><td>Biometrics (fingerprint)</td><td>To unlock the app. Fingerprint data is handled only within your device's secure hardware and is never shared with the app or the developer.</td></tr>
+  <tr><td>Advertising ID (AD_ID)</td><td>Used by Google to serve banner ads and limit repeated impressions. See 3-1.</td></tr>
+  <tr><td>Ad services &mdash; Ad ID · Attribution · Topics<br>(ACCESS_ADSERVICES_AD_ID · _ATTRIBUTION · _TOPICS)</td><td>Android's advertising APIs (Privacy Sandbox). <strong>Topics</strong> lets the device share inferred interest categories for ad selection. These permissions are included automatically by Google's ad SDK; the developer neither receives nor stores their output.</td></tr>
+  <tr><td>Billing (com.android.vending.BILLING)</td><td>For purchasing Harukan Plus. See 3-2.</td></tr>
+  <tr><td>Foreground service · Wake lock<br>(FOREGROUND_SERVICE · WAKE_LOCK)</td><td>Required by Android to deliver scheduled reminders at the chosen time.</td></tr>
 </table>
 <p>Harukan does not request location, camera, contacts, or microphone permissions.</p>
 
@@ -328,7 +374,9 @@
 
 <h2 id="delete-en">7. Retention and deletion</h2>
 <ul>
-  <li>The developer holds no user information, so there is no developer-side retention period.</li>
+  <li>The developer holds no user information directly. The anonymous usage statistics in section 3-3 are
+      stored by GameAnalytics under its retention policy. Uninstalling the app deletes the install ID, so a
+      reinstall is not linked to earlier statistics.</li>
   <li>Records on your device remain until you delete them.</li>
   <li>Deleted entries stay in Trash for 30 days, then are permanently removed automatically.</li>
   <li>Settings &rsaquo; My data &rsaquo; <strong>Erase all data</strong> immediately deletes every
@@ -336,8 +384,9 @@
   <li>Uninstalling the app removes everything it stored.</li>
 </ul>
 <p>
-  Because the developer holds no data, there is no separate access, correction, or deletion
-  request process. You can exercise all of these directly within the app.
+  You can exercise all rights over the records on your device directly within the app. The anonymous usage
+  statistics are not linked to your name or contacts and cannot identify you. If you would like statistics
+  that were already sent to be deleted, please contact us (section 10).
 </p>
 
 <h2>8. Children's privacy</h2>
